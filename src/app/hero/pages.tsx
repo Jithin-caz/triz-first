@@ -36,10 +36,10 @@ export default function Hero() {
     <div className="hero">
       <Container>
         <Row>
-          <Col md={5} className="hero-left" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">
+          <Col md={5} className="hero-left" data-aos="zoom-in-left" data-aos-duration="1300" data-aos-once="true">
             <img src="https://cdn.pixabay.com/photo/2014/04/02/14/48/children-306607_960_720.jpg" alt="search--v1" />
           </Col>
-          <Col md={7} className="hero-right" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">
+          <Col md={7} className="hero-right" data-aos="zoom-in-right" data-aos-duration="1300" data-aos-once="true">
             <h2>For every student, <br /> Every classroom.<br /><u> Real results.</u></h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corporis
             itaque veritatis error corrupti recusandae, eum est eligendi exercitationem culpa
@@ -48,7 +48,7 @@ export default function Hero() {
           </Col>
         </Row>
 
-        <Row className="hero-bottom" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">
+        <Row className="hero-bottom" data-aos="zoom-in-down" data-aos-duration="1300" data-aos-once="true">
           {resdata.map((item, index) => (
             <div className="drop-down-container" key={index}>
               <button
