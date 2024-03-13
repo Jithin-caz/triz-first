@@ -3,14 +3,14 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "../loader/pages";
 
-// Define interface for the structure of your API response
+
 interface Subject {
   heading: string;
   content: string[];
 }
 
 export default function Hero() {
-  const [resdata, setresdata] = useState<Subject[]>([]); // Provide type annotation for resdata
+  const [resdata, setresdata] = useState<Subject[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,7 +26,7 @@ export default function Hero() {
     fetchData();
   }, []);
 
-  const [openIndex, setOpenIndex] = useState<number | null>(null); // Provide type annotation for openIndex
+  const [openIndex, setOpenIndex] = useState<number | null>(null); 
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
