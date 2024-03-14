@@ -24,6 +24,7 @@ export default function Hero() {
     };
 
     fetchData();
+    
   }, []);
 
   const [openIndex, setOpenIndex] = useState<number | null>(null); 
