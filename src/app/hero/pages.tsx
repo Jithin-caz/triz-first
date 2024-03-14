@@ -35,7 +35,7 @@ export default function Hero() {
   return resdata.length !== 0 ? (
     <div className="hero">
       <Container>
-        <Row>
+        <Row className="hero-top">
           <Col md={5} className="hero-left" data-aos="zoom-in-left" data-aos-duration="1300" data-aos-once="true">
             <img src="https://cdn.pixabay.com/photo/2014/04/02/14/48/children-306607_960_720.jpg" alt="search--v1" />
           </Col>
@@ -46,9 +46,7 @@ export default function Hero() {
                       in maiores reprehenderit nisi provident excepturi! Temporibus, architecto? Repellat, maiores.</p><br />
             <Button className="start-here">start here</Button>
           </Col>
-        </Row>
-
-        <Row className="hero-bottom" data-aos="zoom-in-down" data-aos-duration="1300" data-aos-once="true">
+          <Col sm={12} className="hero-bottom" data-aos="zoom-in-down" data-aos-duration="1300" data-aos-once="true">
           {resdata.map((item, index) => (
             <div className="drop-down-container" key={index}>
               <button
@@ -72,7 +70,10 @@ export default function Hero() {
               </Collapse>
             </div>
           ))}
+        </Col>
         </Row>
+
+       
       </Container>
     </div>
   ) : <Loader />;
