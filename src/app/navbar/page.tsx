@@ -25,6 +25,7 @@ export default function Navbar()
             setDrp(false)
             else
             setDrp(true)
+            console.log(drp)
         }}>Courses <img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/></button>
     <form className="search-bar">
       <input className="search-bar-inner"

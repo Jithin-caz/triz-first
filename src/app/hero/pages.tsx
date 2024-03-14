@@ -37,13 +37,11 @@ export default function Hero() {
       <Container>
         <Row className="hero-top">
           <Col md={5} className="hero-left" data-aos="zoom-in-left" data-aos-duration="1300" data-aos-once="true">
-            <img src="https://cdn.pixabay.com/photo/2014/04/02/14/48/children-306607_960_720.jpg" alt="search--v1" />
+            <img src="/triz.png" alt="search--v1" />
           </Col>
           <Col md={7} className="hero-right" data-aos="zoom-in-right" data-aos-duration="1300" data-aos-once="true">
-            <h2>For every student, <br /> Every classroom.<br /><u> Real results.</u></h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corporis
-            itaque veritatis error corrupti recusandae, eum est eligendi exercitationem culpa
-                      in maiores reprehenderit nisi provident excepturi! Temporibus, architecto? Repellat, maiores.</p><br />
+            <h2><span> For every student,</span> <span>Every classroom.</span><span><u className="underline"> Real results.</u></span></h2>
+            <p>We are a nonprofit with a <span> mission to provide free,world class education for anyone, anywhere</span> </p><br />
             <Button className="start-here">start here</Button>
           </Col>
           <Col sm={12} className="hero-bottom" data-aos="zoom-in-down" data-aos-duration="1300" data-aos-once="true">
@@ -55,7 +53,7 @@ export default function Hero() {
                 aria-expanded={openIndex === index}
               >
                 <div> <span> <img width="20" height="20" src="https://img.freepik.com/free-vector/illustration-graduation-hat_53876-5920.jpg?t=st=1710346426~exp=1710350026~hmac=08c9316ed5b7ee6b29bf7d44a4c73a2daea0b06cc194abbdb68050edb14bfefe&w=740" alt="expand-arrow--v1" />
-                </span> <span>{item.heading}</span></div>
+                </span> <span className="drop-down-head">{item.heading}</span></div>
 
                 <img className="down-logo" width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1" />
               </button>
