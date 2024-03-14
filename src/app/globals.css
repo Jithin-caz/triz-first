@@ -3,7 +3,10 @@
   margin: 0%;
   font-weight:700;
 }
-
+::-webkit-scrollbar
+{
+  display: none;
+}
 .nav-container
 {
   position:fixed;
